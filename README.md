@@ -50,10 +50,10 @@ public class OfertasPost {
         apiClient.setDebugging(true);
 
         // Alterar a chave informada com o valor de client_id da sua APP
-        ((ApiKeyAuth)apiClient.getAuthentication("client_id")).setApiKey("Bl7F57sHtk7m");
+        ((ApiKeyAuth)apiClient.getAuthentication("client_id")).setApiKey("xxxx");
 
         // Alterar a chave informada com o valor de access_token disponível
-        ((ApiKeyAuth)apiClient.getAuthentication("access_token")).setApiKey("4r0dPpshWYhb");
+        ((ApiKeyAuth)apiClient.getAuthentication("access_token")).setApiKey("xxxx");
 
         OffersApi offersApi = new OffersApi(apiClient);
 
