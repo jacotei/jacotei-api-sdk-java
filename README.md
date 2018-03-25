@@ -77,7 +77,13 @@ public class OfertasPost {
             List<String> images = new ArrayList<String>();
             images.add("http://foo.com/"+sku+".jpg");
 
+            List<String> categories = new ArrayList<String>();
+            categories.add("Categoria");
+            categories.add("Subcategoria");
+            categories.add("Sub subcategoria");
+
             offer.setImages(images);
+            offer.setCategories(categories);
             offer.setPrices(offerPrices);
             offerList.add(offer);
         }

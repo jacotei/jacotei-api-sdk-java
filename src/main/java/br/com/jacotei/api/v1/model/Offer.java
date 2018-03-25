@@ -15,6 +15,7 @@ public class Offer  {
 	private Boolean available = null;
 	private String barcode = null;
 	private List<String> images = new ArrayList<String>() ;
+	private List<String> categories = new ArrayList<String>() ;
 	private String isbn = null;
 	private String link = null;
 	private List<OfferPrice> prices = new ArrayList<OfferPrice>() ;
@@ -53,9 +54,21 @@ public class Offer  {
 	public List<String> getImages() {
 		return images;
 	}
-	
+
 	public void setImages(List<String> images) {
 		this.images = images;
+	}
+
+	/**
+	 * Categorias dos produtos da oferta
+	 **/
+	@JsonProperty("categories")
+	public List<String> getCategories() {
+		return categories;
+	}
+
+	public void setCategories(List<String> categories) {
+		this.categories = categories;
 	}
 	
 	/**
@@ -127,6 +140,7 @@ public class Offer  {
 		sb.append("  available: ").append(available).append("\n");
 		sb.append("  barcode: ").append(barcode).append("\n");
 		sb.append("  images: ").append(images).append("\n");
+		sb.append("  categories: ").append(categories).append("\n");
 		sb.append("  isbn: ").append(isbn).append("\n");
 		sb.append("  link: ").append(link).append("\n");
 		sb.append("  prices: ").append(prices).append("\n");
